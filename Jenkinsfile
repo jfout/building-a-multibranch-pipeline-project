@@ -11,11 +11,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install webpack'
-                sh 'npm install eslint-webpack-plugin'
-                sh 'npm install mini-css-extract-plugin'
-                sh 'npm install @babel/eslint-parser'
-                sh 'npm install workbox'
                 sh 'npm install'
             }
         }
