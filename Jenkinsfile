@@ -11,9 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install webpack'
-                sh 'npm install eslint-webpack-plugin'
-                sh 'npm update'
+                
                 sh 'npm install'
             }
         }
