@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
+                sh 'ls -al node_modules'
             }
         }
         stage('Test') {
