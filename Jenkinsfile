@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install --save-dev'
+                sh 'npm install --save-dev webpack-cli'
                 sh 'ls -al node_modules'
             }
         }
