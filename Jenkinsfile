@@ -11,9 +11,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'whoami'
                 sh 'npm install --save-dev'
                 sh 'npm install --save-dev webpack-cli'
                 sh 'ls -al node_modules'
+                sh 'npm update --save-dev'
+                
             }
         }
         stage('Test') {
